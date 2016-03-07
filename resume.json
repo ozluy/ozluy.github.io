@@ -190,7 +190,7 @@
         "general": [ ".Net", "C#", "Entity Framework", "LINQ", "Agile", "Scrum", "Test Driven Development", "SOLID Principles", "Linux", "Java", "Python", "Photoshop", "Android Development" ],
         "web": [ "HTML", "CSS", "Javascipt", "Jquery", "Asp.Net", "Asp.Net MVC", "MVC", "MVVM" ],
         "database": [ "MS SQL", "MongoDB", "MySQL" ],
-        "modern": [ "HTML5", "CSS3", "Angular.js", "Knockout.js", "Ember.js", "Node.js", "SASS", "LESS", "Bootstrap", "Responsive Design" ],
+        "modern": [ "HTML5", "CSS3", "Angular.js", "Knockout.js", "Ember.js", "Node.js", "SASS", "LESS", "Bootstrap", "Responsive Design","ECMAScript2015","GruntJS"],
         "versionControl": [ "Git", "Team Foundation Server", "Bitbucket" ],
         "languages": [
             {
