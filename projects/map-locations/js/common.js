@@ -4,7 +4,7 @@ $.ajaxSetup({
     async: false
 });
 
-$.getJSON("/data/locations.json", function (json) {
+$.getJSON("projects/map-locations/data/locations.json", function (json) {
     obj = json;
 });
 
