@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="map-shell">
+        <div id="map-canvas">
+        </div>
+        <div class="closest-customer-service-shell">
+
+
+            <div class="closest-customer-service-setting">
+               
+                <h3 class="print-city print-head">Select Location</h3>
+                <div class="dropdown-city">
+                    <select class="select-city" id="countryList" onchange="updateCities()">
+                        <option value="chooseCountry">Choose Country...</option>
+                    </select>
+                </div>
+                <br />
+                <div class="dropdown-region">
+                    <select class="select-region" id="cityList" disabled=true onchange="updateMap();">
+                        <option value="chooseCity">Choose City...</option>
+                    </select>
+                </div>
+               
+                <br />
+                <br />
+                <div class="css-title">
+                    <div class="result-address" id="address">
+
+                    </div>
+                </div>
+            </div>
+          
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

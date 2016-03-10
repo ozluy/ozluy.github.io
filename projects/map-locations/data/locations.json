@@ -1,0 +1,42 @@
+﻿{
+    "locations": [
+        {
+            "countryName": "Turkey",
+            "branches": [
+                { "city": "Istanbul" ,"address": "Some Street Name, No:101, Istanbul/Turkey", "locationLat": "41.047031", "locationLng": "29.033183" },
+                { "city": "Izmir", "address": "Some Street Name, No:101, Izmir/Turkey", "locationLat": "38.4178607", "locationLng": "26.9396785" },
+                { "city": "Ankara", "address": "Some Street Name, No:101, Ankara/Turkey", "locationLat": "39.9035557", "locationLng": "32.6226818" },
+                { "city": "Antalya",  "address": "Some Street Name, No:101, Antalya/Turkey", "locationLat": "36.8980543", "locationLng": "30.6480653" },
+                { "city": "Bursa", "address": "Some Street Name, No:101, Bursa/Turkey", "locationLat": "40.221788", "locationLng": "28.9622499" },
+                { "city": "Kocaeli",   "address": "Some Street Name, No:101, Kocaeli/Turkey", "locationLat": "40.8045711", "locationLng": "29.3874172" }
+            ]
+        },
+        {
+            "countryName": "Poland",
+            "branches": [
+                { "city": "Warsaw",   "address": "Some Street Name, No:101, Warsaw/Poland", "locationLat": "52.2330653", "locationLng": "20.9211125" },
+                { "city": "Krokow",   "address": "Some Street Name, No:101, Krokow/Poland", "locationLat": "50.0468548", "locationLng": "19.9348337" },
+                { "city": "Poznan",   "address": "Some Street Name, No:101, Poznan/Poland", "locationLat": "52.4006553", "locationLng": "16.7615842" },
+                { "city": "Wroclaw", "address": "Some Street Name, No:101, Wroclaw/Poland", "locationLat": "51.1271647", "locationLng": "16.9218246" }
+            ]
+        },
+        {
+            "countryName": "Spain",
+            "branches": [
+                { "city": "Barcelona", "address": "Some Street Name, No:101, Barcelona/Spain", "locationLat": "41.3948976", "locationLng": "2.0787282" },
+                { "city": "Madrid",   "address": "Some Street Name, No:101, Madrid/Spain", "locationLat": "40.4381311", "locationLng": "-3.8196195" },
+                { "city": "Valencia",   "address": "Some Street Name, No:101, Valencia/Spain", "locationLat": "39.4078969", "locationLng": "-0.431551" },
+                { "city": "Granada",   "address": "Some Street Name, No:101, Granada/Spain", "locationLat": "37.1810095", "locationLng": "-3.6262911" },
+                { "city": "Zaragoza",   "address": "Some Street Name, No:101, Zaragoza/Spain", "locationLat": "41.6517501", "locationLng": "-0.9300003" }
+                
+            ]
+        },
+        {
+            "countryName": "Lithuania",
+            "branches": [
+                { "city": "Vilnius",   "address": "Gediminas Street, Salento, No:101, Vilnius/Lithuania", "locationLat": "54.7002886", "locationLng": "25.1128509" },
+                { "city": "Kaunas",  "address": "Some Street Name, No:101, Kaunas/Lithuania", "locationLat": "54.8900536", "locationLng": "23.8571726" }
+            ]
+        }
+    ]
+}
