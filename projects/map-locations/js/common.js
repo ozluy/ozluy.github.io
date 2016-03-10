@@ -15,17 +15,18 @@ $.ajaxSetup({
 var branches = [];
 
 //Initialize the branches for first view of maps
+var locationsArray = obj.locations;
 counter = 0;
-for (var a in obj.locations) {
-    for (var b in obj.locations[a].branches) {
-        branches[counter] = [obj.locations[a].branches[b].city, parseFloat(obj.locations[a].branches[b].locationLat), parseFloat(obj.locations[a].branches[b].locationLng), parseFloat(b)];
+for (var a in licationsArray) {
+    for (var b in licationsArray[a].branches) {
+        branches[counter] = [licationsArray[a].branches[b].city, parseFloat(licationsArray[a].branches[b].locationLat), parseFloat(licationsArray[a].branches[b].locationLng), parseFloat(b)];
         counter++;
     }
 }
 //Fill the city choose list
 $(document).ready(function () {
-    for (var a in obj.locations) {
-        $('#countryList').append($('<option>').text(obj.locations[a].countryName).attr('value', a));
+    for (var a in licationsArray) {
+        $('#countryList').append($('<option>').text(licationsArray[a].countryName).attr('value', a));
     }
 })
 
@@ -39,19 +40,19 @@ function updateCities() {
     else {
         $('#cityList').removeAttr('disabled');
         $('#cityList').empty().append('<option value="chooseCity">Choose City...</option>');
-        for (var b in obj.locations[$("#countryList").val()].branches) {
-            $('#cityList').append($('<option>').text(obj.locations[$("#countryList").val()].branches[b].city).attr('value', b));
+        for (var b in licationsArray[$("#countryList").val()].branches) {
+            $('#cityList').append($('<option>').text(licationsArray[$("#countryList").val()].branches[b].city).attr('value', b));
         }
     }
 }
 function updateMap() {
     if ($("#cityList").val() != "chooseCity") {
-        $("#address").empty().text(obj.locations[$("#countryList").val()].branches[$("#cityList").val()].address);
+        $("#address").empty().text(licationsArray[$("#countryList").val()].branches[$("#cityList").val()].address);
 
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
             zoom: 13,
             scrollwheel: false,
-            center: { lat: parseFloat(obj.locations[$("#countryList").val()].branches[$("#cityList").val()].locationLat), lng: parseFloat(obj.locations[$("#countryList").val()].branches[$("#cityList").val()].locationLng) + 0.01 }
+            center: { lat: parseFloat(licationsArray[$("#countryList").val()].branches[$("#cityList").val()].locationLat), lng: parseFloat(licationsArray[$("#countryList").val()].branches[$("#cityList").val()].locationLng) + 0.01 }
         });
         setMarkers(map);
     }
@@ -72,7 +73,7 @@ function initMap() {
 function setMarkers(map) {
     var image = {
         url: '/projects/map-locations/img/map-marker.png',
-        size: new google.maps.Size(50, 50),
+        size: new google.maps.Size(90, 90),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(0, 0)
     };
