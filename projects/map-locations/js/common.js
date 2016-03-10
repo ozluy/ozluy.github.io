@@ -4,7 +4,7 @@ $.ajaxSetup({
     async: false
 });
 
-$.getJSON("projects/map-locations/data/locations.json", function (json) {
+$.getJSON("/projects/map-locations/data/locations.json", function (json) {
     obj = json;
 });
 
@@ -71,7 +71,7 @@ function initMap() {
 
 function setMarkers(map) {
     var image = {
-        url: '/img/map-marker.png',
+        url: '/projects/map-locations/img/map-marker.png',
         size: new google.maps.Size(50, 50),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(0, 0)
