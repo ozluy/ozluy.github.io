@@ -11,7 +11,7 @@
     <main>
         <div class="game-shell">
             <div class="display-container" id="symbolParent">
-                <img class="symbol" alt="wild" src="vendor/img/SYM1.png" />
+                <!--<img class="symbol" alt="wild" src="vendor/img/SYM1.png" />-->
             </div>
             <div class="action-container">
                 <select id="symbolsDropdown" class="symbol-list">
@@ -25,19 +25,18 @@
                 <button type="button" onclick="spin();" id="spinner">
                     Spin
                 </button>
+
             </div>
            
         </div>
         <div id="won-message">
             <div class="message">
-                you won!!!
-                <button onclick="restart();">restart</button>
+                <button class="text"> you won!!!</button>
             </div>
         </div>
         <div id="lost-message">
             <div class="message">
-                you lost!!!
-                <button onclick="restart();">restart</button>
+                <button class="text">you lost!!!</button>             
             </div>
         </div>
         <div class="audio-shell">
