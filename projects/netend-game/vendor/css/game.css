@@ -99,8 +99,10 @@ main {
       color: #999;
       border: solid 2px #999;
       background: url(../img/BTN_Spin_d.png) no-repeat 5px center;
-      background-size: 30px 30px; }
+      background-size: 30px 30px;
+      pointer-events: none; }
     .game-shell .action-container button#spinner.enabled {
+      pointer-events: auto;
       color: green;
       border: solid 2px green;
       background: url(../img/BTN_Spin.png) no-repeat 5px center;

@@ -41,7 +41,8 @@ getJSON('vendor/data/symbols.json').then(function (data) {
 
 //Spin button click
 var spin = function () {
-    spinner.className = ""; //Prevents double click
+    var buttonSpin = this;
+    spinner.className = ""; //Prevents any clicks after clicked spin button until message(won/lost) disappear
     var random = Math.floor((Math.random() * 6));
     selectedSymbolValue = selectedSymbol.options[selectedSymbol.selectedIndex].value
     console.log(selectedSymbolValue);
