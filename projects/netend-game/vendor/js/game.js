@@ -41,6 +41,7 @@ getJSON('vendor/data/symbols.json').then(function (data) {
 
 //Spin button click
 var spin = function () {
+    spinner.className = ""; //Prevents double click
     var random = Math.floor((Math.random() * 6));
     selectedSymbolValue = selectedSymbol.options[selectedSymbol.selectedIndex].value
     console.log(selectedSymbolValue);
@@ -54,6 +55,7 @@ var spin = function () {
         audioLost.pause()
         audioLost.currentTime = 0;
         symbol_element.className = "symbol";
+        spinner.className = "enabled";
     };
     var selectedByMachine = listOfSymbols[random];
     if (selectedByMachine.name == selectedSymbolValue) {
