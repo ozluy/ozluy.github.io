@@ -1,8 +1,15 @@
-﻿var listOfSymbols = [],
+﻿//variable declerations
+var listOfSymbols = [],
     spinner = document.getElementById('spinner'),
     selectedSymbol = document.getElementById('symbolsDropdown'),
-    symbolContainer = document.getElementById('symbolParent');
+    symbol_element = document.getElementById('symbol_element'),
+    winContainer = document.getElementById('won-message'),
+    lostContainer = document.getElementById('lost-message'),
+    audioSpin = document.getElementById('audio_spin'),
+    audioWon = document.getElementById('audio_won'),
+    audioLost = document.getElementById('audio_lost');
 
+//Ajax Promise
 var getJSON = function (url) {
     console.log("Looding...");
     return new Promise(function (resolve, reject) {
@@ -22,6 +29,7 @@ var getJSON = function (url) {
     });
 };
 
+//Promise Call
 getJSON('vendor/data/symbols.json').then(function (data) {
     listOfSymbols = data.symbols;
     console.log("Symbols loaded!");
@@ -30,14 +38,13 @@ getJSON('vendor/data/symbols.json').then(function (data) {
 }, function (status) {
     alert('Something went wrong!');
 });
-var winContainer = document.getElementById('won-message');
-var lostContainer = document.getElementById('lost-message');
-var audioWon = document.getElementById('audio_won');
-var audioLost = document.getElementById('audio_lost');
+
+//Spin button click
 var spin = function () {
     var random = Math.floor((Math.random() * 6));
     selectedSymbolValue = selectedSymbol.options[selectedSymbol.selectedIndex].value
     console.log(selectedSymbolValue);
+    audioSpin.play();
 
     function hideMessage() {
         winContainer.className = "";
@@ -46,26 +53,31 @@ var spin = function () {
         audioWon.currentTime = 0;
         audioLost.pause()
         audioLost.currentTime = 0;
+        symbol_element.className = "symbol";
     };
     var selectedByMachine = listOfSymbols[random];
     if (selectedByMachine.name == selectedSymbolValue) {
         console.log("machine: " + selectedByMachine.name + ", your select:" + selectedSymbolValue);
-        symbolContainer.innerHTML = '<img class="symbol animated" alt="' + selectedByMachine.name + '" src="vendor/img/' + selectedByMachine.imgUrl + '" />';
+        symbol_element.className = "symbol animated";
+        symbol_element.alt = selectedByMachine.name;
+        symbol_element.src = 'vendor/img/' + selectedByMachine.imgUrl;
         function showMessageWon() {
             winContainer.className = "active";
             audioWon.play();
         };
-        setTimeout(showMessageWon, 500);
-        setTimeout(hideMessage, 3500);
+        setTimeout(showMessageWon, 1000);
+        setTimeout(hideMessage, 4000);
     }
     else {
         console.log("machine: " + selectedByMachine.name + ", your select:" + selectedSymbolValue);
-        symbolContainer.innerHTML = '<img class="symbol animated" alt="' + selectedByMachine.name + '" src="vendor/img/' + selectedByMachine.imgUrl + '" />';
+        symbol_element.className = "symbol animated";
+        symbol_element.alt = selectedByMachine.name;
+        symbol_element.src = 'vendor/img/' + selectedByMachine.imgUrl;
         function showMessageLost() {
             lostContainer.className = "active";
             audioLost.play();
         };
-        setTimeout(showMessageLost, 500);
-        setTimeout(hideMessage, 3500);
+        setTimeout(showMessageLost, 1000);
+        setTimeout(hideMessage, 4000);
     }
 };

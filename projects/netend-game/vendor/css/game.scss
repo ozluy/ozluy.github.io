@@ -41,7 +41,7 @@ main {
         height: 100%;
         text-align: center;
 
-        img.symbol.animated {
+        img.symbol {
             position: relative;
             top: 50%;
             -moz-transform: translateY(-50%);
@@ -52,6 +52,17 @@ main {
             width: 80%;
         }
 
+        .animated {
+            -moz-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+            -o-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+            -webkit-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+            animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+            -moz-transform-origin: center top;
+            -ms-transform-origin: center top;
+            -o-transform-origin: center top;
+            -webkit-transform-origin: center top;
+            transform-origin: center top;
+        }
 
 
         @media only screen and (orientation: portrait) {
@@ -105,7 +116,7 @@ main {
             color: #999;
             border: solid 2px #999;
             background: url(../img/BTN_Spin_d.png) no-repeat 5px center;
-            background-size: 30px 30px;            
+            background-size: 30px 30px;
         }
 
         button#spinner.enabled {
@@ -164,8 +175,6 @@ main {
             text-transform: uppercase;
             background-color: green;
         }
-
-       
     }
 
     display: none;
@@ -250,6 +259,39 @@ main {
 }
 
 
+@-webkit-keyframes  zoom {
+
+    0%,100% {
+        @include myzoom(1);
+    }
+
+    50% {
+        @include myzoom(1.1);
+    }
+}
+
+@-moz-keyframes  zoom {
+
+    0%,100% {
+        @include myzoom(1);
+    }
+
+    50% {
+        @include myzoom(1.1);
+    }
+}
+
+@-o-keyframes  zoom {
+
+    0%,100% {
+        @include myzoom(1);
+    }
+
+    50% {
+        @include myzoom(1.1);
+    }
+}
+
 @keyframes zoom {
 
     0%,100% {
@@ -263,7 +305,7 @@ main {
 
 @keyframes zoom_success {
 
-    0%,100%{
+    0%,100% {
         @include myzoom(1);
     }
 
@@ -274,5 +316,68 @@ main {
     50% {
         @include myzoom(1);
     }
-   
 }
+
+@-webkit-keyframes zoomOut {
+
+    from {
+        opacity: 1;      
+    }
+
+    50% {
+          opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        -ms-transform: scale3d(.3, .3, .3);
+        -o-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+@-moz-keyframes zoomOut {
+
+    from {
+        opacity: 1;      
+    }
+
+    50% {
+          opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        -ms-transform: scale3d(.3, .3, .3);
+        -o-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@-o-keyframes zoomOut {
+
+    from {
+        opacity: 1;      
+    }
+
+    50% {
+          opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        -ms-transform: scale3d(.3, .3, .3);
+        -o-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes zoomOut {
+
+    from {
+        opacity: 1;      
+    }
+
+    50% {
+          opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+        -ms-transform: scale3d(.3, .3, .3);
+        -o-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+

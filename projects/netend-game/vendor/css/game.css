@@ -34,7 +34,7 @@ main {
     border-width: 0 1px 0 0;
     height: 100%;
     text-align: center; }
-    .game-shell .display-container img.symbol.animated {
+    .game-shell .display-container img.symbol {
       position: relative;
       top: 50%;
       -moz-transform: translateY(-50%);
@@ -43,6 +43,16 @@ main {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       width: 80%; }
+    .game-shell .display-container .animated {
+      -moz-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+      -o-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+      -webkit-animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+      animation: zoomOut 0.5s 0.5s linear, spin 0.5s none linear;
+      -moz-transform-origin: center top;
+      -ms-transform-origin: center top;
+      -o-transform-origin: center top;
+      -webkit-transform-origin: center top;
+      transform-origin: center top; }
     @media only screen and (orientation: portrait) {
       .game-shell .display-container {
         width: 100%;
@@ -201,6 +211,51 @@ main {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); } }
 
+@-webkit-keyframes zoom {
+  0%, 100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
+
+@-moz-keyframes zoom {
+  0%, 100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
+
+@-o-keyframes zoom {
+  0%, 100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); } }
+
 @keyframes zoom {
   0%, 100% {
     -moz-transform: scale(1);
@@ -237,5 +292,53 @@ main {
     -o-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+@-moz-keyframes zoomOut {
+  from {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+@-o-keyframes zoomOut {
+  from {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
+
+@keyframes zoomOut {
+  from {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); } }
 
 /*# sourceMappingURL=game.css.map */

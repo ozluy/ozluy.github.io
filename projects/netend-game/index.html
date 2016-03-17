@@ -11,7 +11,7 @@
     <main>
         <div class="game-shell">
             <div class="display-container" id="symbolParent">
-                <!--<img class="symbol" alt="wild" src="vendor/img/SYM1.png" />-->
+                <img id="symbol_element" class="symbol" alt="select a symbol and press spin" src="" />
             </div>
             <div class="action-container">
                 <select id="symbolsDropdown" class="symbol-list">
@@ -40,6 +40,10 @@
             </div>
         </div>
         <div class="audio-shell">
+            <audio controls id="audio_spin">
+                <source src="vendor/media/spin.ogg" type="audio/ogg">
+                <source src="vendor/media/spin.mp3" type="audio/mpeg">
+            </audio>
             <audio controls id="audio_lost">
                 <source src="vendor/media/youlost.ogg" type="audio/ogg">
                 <source src="vendor/media/youlost.mp3" type="audio/mpeg">
