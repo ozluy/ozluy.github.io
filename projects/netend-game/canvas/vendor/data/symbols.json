@@ -1,0 +1,31 @@
+﻿{
+    "symbols": [
+        {
+            "id": 1,
+            "name": "wild",
+            "imgUrl": "SYM1.png"
+        },
+        {
+            "id": 2,
+            "name": "grapes",
+            "imgUrl": "SYM2.png"
+        },
+         {
+            "id": 3,
+            "name": "strawberry",
+            "imgUrl": "SYM3.png"
+        }, {
+            "id": 4,
+            "name": "pineapple",
+            "imgUrl": "SYM4.png"
+        }, {
+            "id": 5,
+            "name": "lemon",
+            "imgUrl": "SYM5.png"
+        }, {
+            "id": 6,
+            "name": "mango",
+            "imgUrl": "SYM6.png"
+        }
+    ]
+}

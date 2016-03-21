@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>*** Bingo! ***</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--Style-->
+    <link href="vendor/css/game.min.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div class="game-shell" id="game_shell">
+            <div class="display-container" >
+                <canvas id="canvas"></canvas>
+            </div>
+          
+            <div class="action-container">
+                <select id="symbolsDropdown" class="symbol-list">
+                    <option value="wild">wild</option>
+                    <option value="grapes">grapes</option>
+                    <option value="strawberry">strawberry</option>
+                    <option value="pineapple">pineapple</option>
+                    <option value="lemon">lemon</option>
+                    <option value="mango">mango</option>
+                </select>
+                <button type="button" onclick="spin();" id="spinner">
+                    Spin
+                </button>
+
+            </div>
+
+        </div>
+        <div id="won-message">
+            <div class="message">
+                <button class="text"> you won!!!</button>
+            </div>
+        </div>
+        <div id="lost-message">
+            <div class="message">
+                <button class="text">you lost!!!</button>             
+            </div>
+        </div>
+        <div class="audio-shell">
+            <audio controls id="audio_spin">
+                <source src="vendor/media/spin.ogg" type="audio/ogg">
+                <source src="vendor/media/spin.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls id="audio_lost">
+                <source src="vendor/media/youlost.ogg" type="audio/ogg">
+                <source src="vendor/media/youlost.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls id="audio_won">
+                <source src="vendor/media/youwon.ogg" type="audio/ogg">
+                <source src="vendor/media/youwon.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </main>
+    <!--Script-->
+    <script src="vendor/js/game.js"></script>
+</body>
+</html>
