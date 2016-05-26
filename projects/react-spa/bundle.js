@@ -46654,15 +46654,15 @@
 							primaryTogglesNestedList: true,
 							nestedItems: [_react2.default.createElement(
 								_reactRouter.Link,
-								{ key: 1, to: { pathname: '/nested/nested-item', query: { id: 1 } }, style: leftMenuStyle.nestedItemLink },
+								{ onTouchTap: this._handleClose.bind(this), key: 1, to: { pathname: '/nested/nested-item', query: { id: 1 } }, style: leftMenuStyle.nestedItemLink },
 								_react2.default.createElement(_List.ListItem, { style: leftMenuStyle.nestedItemLink.nestedItem, leftIcon: _react2.default.createElement(_grade2.default, null), primaryText: 'Item 1' })
 							), _react2.default.createElement(
 								_reactRouter.Link,
-								{ key: 2, to: { pathname: '/nested/nested-item', query: { id: 2 } }, style: leftMenuStyle.nestedItemLink },
+								{ onTouchTap: this._handleClose.bind(this), key: 2, to: { pathname: '/nested/nested-item', query: { id: 2 } }, style: leftMenuStyle.nestedItemLink },
 								_react2.default.createElement(_List.ListItem, { style: leftMenuStyle.nestedItemLink.nestedItem, leftIcon: _react2.default.createElement(_grade2.default, null), key: 2, primaryText: 'Item 2' })
 							), _react2.default.createElement(
 								_reactRouter.Link,
-								{ key: 3, to: { pathname: '/nested/nested-item', query: { id: 3 } }, style: leftMenuStyle.nestedItemLink },
+								{ onTouchTap: this._handleClose.bind(this), key: 3, to: { pathname: '/nested/nested-item', query: { id: 3 } }, style: leftMenuStyle.nestedItemLink },
 								_react2.default.createElement(_List.ListItem, { style: leftMenuStyle.nestedItemLink.nestedItem, leftIcon: _react2.default.createElement(_grade2.default, null), key: 3, primaryText: 'Item 3' })
 							)]
 						})
