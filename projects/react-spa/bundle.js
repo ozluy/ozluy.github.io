@@ -27707,27 +27707,27 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Index = __webpack_require__(486);
+	var _Index = __webpack_require__(542);
 
 	var _Index2 = _interopRequireDefault(_Index);
 
-	var _About = __webpack_require__(490);
+	var _About = __webpack_require__(543);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Contact = __webpack_require__(510);
+	var _Contact = __webpack_require__(544);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Projects = __webpack_require__(520);
+	var _Projects = __webpack_require__(545);
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Nested = __webpack_require__(539);
+	var _Nested = __webpack_require__(546);
 
 	var _Nested2 = _interopRequireDefault(_Nested);
 
-	var _NestedItem = __webpack_require__(540);
+	var _NestedItem = __webpack_require__(547);
 
 	var _NestedItem2 = _interopRequireDefault(_NestedItem);
 
@@ -53034,65 +53034,7 @@
 	module.exports = keyOf;
 
 /***/ },
-/* 486 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(75);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _BasePage2 = __webpack_require__(487);
-
-	var _BasePage3 = _interopRequireDefault(_BasePage2);
-
-	var _Divider = __webpack_require__(488);
-
-	var _Divider2 = _interopRequireDefault(_Divider);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Index = function (_BasePage) {
-		_inherits(Index, _BasePage);
-
-		function Index() {
-			_classCallCheck(this, Index);
-
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(Index).apply(this, arguments));
-		}
-
-		_createClass(Index, [{
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'span',
-						{ style: { fontSize: '24px', fontWeight: 'bold' } },
-						'Projects'
-					),
-					_react2.default.createElement(Devider, null),
-					'The SvgIcon component takes an SVG path element as its child, and converts it to a React component which displays the path and allows the icon to be styled and respond to mouse events.'
-				);
-			}
-		}]);
-
-		return Index;
-	}(_BasePage3.default);
-
-	module.exports = Index;
-
-/***/ },
+/* 486 */,
 /* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -53240,193 +53182,7 @@
 	exports.default = Divider;
 
 /***/ },
-/* 490 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(75);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _BasePage2 = __webpack_require__(487);
-
-	var _BasePage3 = _interopRequireDefault(_BasePage2);
-
-	var _Divider = __webpack_require__(488);
-
-	var _Divider2 = _interopRequireDefault(_Divider);
-
-	var _Card = __webpack_require__(491);
-
-	var _GridList = __webpack_require__(503);
-
-	var _IconButton = __webpack_require__(402);
-
-	var _IconButton2 = _interopRequireDefault(_IconButton);
-
-	var _Subheader = __webpack_require__(458);
-
-	var _Subheader2 = _interopRequireDefault(_Subheader);
-
-	var _starBorder = __webpack_require__(506);
-
-	var _starBorder2 = _interopRequireDefault(_starBorder);
-
-	var _FlatButton = __webpack_require__(507);
-
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var About = function (_BasePage) {
-		_inherits(About, _BasePage);
-
-		function About() {
-			_classCallCheck(this, About);
-
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(About).apply(this, arguments));
-		}
-
-		_createClass(About, [{
-			key: 'render',
-			value: function render() {
-				var styles = {
-					gridList: {
-						width: 'auto',
-						height: 'auto',
-						overflowY: 'auto',
-						marginBottom: 24,
-						img: {
-							width: '33.3%'
-						}
-					}
-				};
-
-				var tilesData = [{
-					img: './assets/img/starks.jpg',
-					title: 'Breakfast',
-					author: 'jill111'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Tasty burger',
-					author: 'pashminu'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Camera',
-					author: 'Danson67'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Morning',
-					author: 'fancycrave1'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Hats',
-					author: 'Hans'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Honey',
-					author: 'fancycravel'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Vegetables',
-					author: 'jill111'
-				}, {
-					img: './assets/img/starks.jpg',
-					title: 'Water plant',
-					author: 'BkrmadtyaKarki'
-				}];
-				return _react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'span',
-						{ style: { fontSize: '24px', fontWeight: 'bold' } },
-						'About'
-					),
-					_react2.default.createElement(_Divider2.default, null),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						_Card.Card,
-						null,
-						_react2.default.createElement(_Card.CardHeader, {
-							title: 'URL Avatar',
-							subtitle: 'Subtitle',
-							avatar: './assets/img/starks.jpg'
-						}),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
-						),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
-						),
-						_react2.default.createElement(
-							_GridList.GridList,
-							{
-								cellHeight: 200,
-								style: styles.gridList
-							},
-							_react2.default.createElement(
-								_Subheader2.default,
-								null,
-								'December'
-							),
-							tilesData.map(function (tile) {
-								return _react2.default.createElement(
-									_GridList.GridTile,
-									{
-										key: tile.title,
-										title: tile.title,
-										subtitle: _react2.default.createElement(
-											'span',
-											null,
-											'by ',
-											_react2.default.createElement(
-												'b',
-												null,
-												tile.author
-											)
-										),
-										actionIcon: _react2.default.createElement(
-											_IconButton2.default,
-											null,
-											_react2.default.createElement(_starBorder2.default, { color: 'white' })
-										)
-									},
-									_react2.default.createElement('img', { src: tile.img })
-								);
-							})
-						),
-						_react2.default.createElement(_Card.CardTitle, { title: 'Card title', subtitle: 'Card subtitle' }),
-						_react2.default.createElement(
-							_Card.CardActions,
-							null,
-							_react2.default.createElement(_FlatButton2.default, { label: 'Action1' }),
-							_react2.default.createElement(_FlatButton2.default, { label: 'Action2' })
-						)
-					)
-				);
-			}
-		}]);
-
-		return About;
-	}(_BasePage3.default);
-
-	module.exports = About;
-
-/***/ },
+/* 490 */,
 /* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -55724,214 +55480,7 @@
 	exports.default = FlatButtonLabel;
 
 /***/ },
-/* 510 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(75);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _BasePage2 = __webpack_require__(487);
-
-	var _BasePage3 = _interopRequireDefault(_BasePage2);
-
-	var _Divider = __webpack_require__(488);
-
-	var _Divider2 = _interopRequireDefault(_Divider);
-
-	var _Paper = __webpack_require__(439);
-
-	var _Paper2 = _interopRequireDefault(_Paper);
-
-	var _TextField = __webpack_require__(511);
-
-	var _TextField2 = _interopRequireDefault(_TextField);
-
-	var _RaisedButton = __webpack_require__(517);
-
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
-
-	var _Subheader = __webpack_require__(458);
-
-	var _Subheader2 = _interopRequireDefault(_Subheader);
-
-	var _send = __webpack_require__(519);
-
-	var _send2 = _interopRequireDefault(_send);
-
-	var _colors = __webpack_require__(313);
-
-	var _Card = __webpack_require__(491);
-
-	var _FlatButton = __webpack_require__(507);
-
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Contact = function (_BasePage) {
-		_inherits(Contact, _BasePage);
-
-		function Contact() {
-			_classCallCheck(this, Contact);
-
-			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Contact).call(this));
-
-			_this2.state = {
-				mobile: window.innerWidth > 767 ? '50%' : '100%'
-			};
-			return _this2;
-		}
-
-		_createClass(Contact, [{
-			key: 'render',
-			value: function render() {
-				var _this = this;
-				var styles = {
-					card: {
-						textAlign: 'center',
-						marginBottom: '15px',
-						cardHeader: {
-							textAlign: 'left'
-						}
-					},
-					clearFix: {
-						clear: 'both',
-						width: '100%',
-						display: 'block',
-						padding: '15px',
-						boxSizing: 'border-box'
-					},
-					twinContainer: {
-						padding: '15px',
-						width: _this.state.mobile,
-						display: 'inline-block',
-						boxSizing: 'border-box'
-					}
-				};
-
-				return _react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'span',
-						{ style: { fontSize: '24px', fontWeight: 'bold' } },
-						'Contact'
-					),
-					_react2.default.createElement(_Divider2.default, null),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						_Card.Card,
-						{ style: styles.card },
-						_react2.default.createElement(
-							_Subheader2.default,
-							{ style: styles.card.cardHeader },
-							' Address Detail'
-						),
-						_react2.default.createElement(_Card.CardTitle, {
-							title: 'Address',
-							subtitle: 'Subtitle'
-						}),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-						),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-						),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-						),
-						_react2.default.createElement(
-							_Card.CardText,
-							null,
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-						)
-					),
-					_react2.default.createElement(
-						_Paper2.default,
-						null,
-						_react2.default.createElement(
-							_Subheader2.default,
-							null,
-							' Contact Form'
-						),
-						_react2.default.createElement(
-							'div',
-							{ style: styles.clearFix },
-							_react2.default.createElement(
-								'div',
-								{ style: styles.twinContainer },
-								_react2.default.createElement(_TextField2.default, {
-									fullWidth: true,
-									hintText: 'Full Name',
-									errorText: '',
-									floatingLabelText: 'Full Name'
-								}),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement(_TextField2.default, {
-									fullWidth: true,
-									hintText: 'Phone',
-									errorText: '',
-									floatingLabelText: 'Phone'
-								}),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement(_TextField2.default, {
-									fullWidth: true,
-									hintText: 'Email',
-									errorText: '',
-									floatingLabelText: 'Email'
-								}),
-								_react2.default.createElement('br', null)
-							),
-							_react2.default.createElement(
-								'div',
-								{ style: styles.twinContainer },
-								_react2.default.createElement(_TextField2.default, {
-									fullWidth: true,
-									hintText: 'Message',
-									errorText: '',
-									floatingLabelText: 'Message',
-									multiLine: true,
-									rows: 5
-								}),
-								_react2.default.createElement('br', null),
-								_react2.default.createElement(_RaisedButton2.default, {
-									label: 'send',
-									fullWidth: true,
-									labelPosition: 'after',
-									primary: true,
-									backgroundColor: '#a4c639',
-									icon: _react2.default.createElement(_send2.default, { color: _colors.fullWhite })
-								})
-							)
-						)
-					)
-				);
-			}
-		}]);
-
-		return Contact;
-	}(_BasePage3.default);
-
-	module.exports = Contact;
-
-/***/ },
+/* 510 */,
 /* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -57637,157 +57186,7 @@
 	exports.default = ContentSend;
 
 /***/ },
-/* 520 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(75);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _BasePage2 = __webpack_require__(487);
-
-	var _BasePage3 = _interopRequireDefault(_BasePage2);
-
-	var _Card = __webpack_require__(491);
-
-	var _FlatButton = __webpack_require__(507);
-
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-
-	var _axios = __webpack_require__(521);
-
-	var _axios2 = _interopRequireDefault(_axios);
-
-	var _RaisedButton = __webpack_require__(517);
-
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
-
-	var _Divider = __webpack_require__(488);
-
-	var _Divider2 = _interopRequireDefault(_Divider);
-
-	var _List = __webpack_require__(467);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Projects = function (_BasePage) {
-		_inherits(Projects, _BasePage);
-
-		function Projects() {
-			_classCallCheck(this, Projects);
-
-			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).call(this));
-
-			_this2.state = {
-				projectList: []
-			};
-			return _this2;
-		}
-
-		_createClass(Projects, [{
-			key: 'componentWillMount',
-			value: function componentWillMount() {
-				this._getProjects();
-			}
-		}, {
-			key: 'componentDidMount',
-			value: function componentDidMount() {
-				var _this3 = this;
-
-				this._timer = setInterval(function () {
-					return _this3._getProjects();
-				}, 500000);
-			}
-		}, {
-			key: 'componentWillUnmount',
-			value: function componentWillUnmount() {
-				clearInterval(this._timer);
-				console.log('projects unmounted!');
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-
-				return _react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'span',
-						{ style: { fontSize: '24px', fontWeight: 'bold' } },
-						'Projects'
-					),
-					_react2.default.createElement(_Divider2.default, null),
-					_react2.default.createElement(
-						_List.List,
-						null,
-						this.state.projectList.map(function (item) {
-							return _react2.default.createElement(
-								_List.ListItem,
-								{
-									innerDivStyle: { padding: 0 },
-									style: { cursor: 'auto', margin: '0 0 15px 0' }, key: item.id },
-								_react2.default.createElement(
-									_Card.Card,
-									{ style: { padding: 0 } },
-									_react2.default.createElement(_Card.CardTitle, { title: item.title, subtitle: item.type }),
-									_react2.default.createElement(
-										_Card.CardText,
-										null,
-										item.techs.map(function (tech) {
-											return _react2.default.createElement(_FlatButton2.default, {
-												key: tech,
-												label: tech,
-												style: { margin: 5 }
-
-											});
-										})
-									),
-									_react2.default.createElement(
-										_Card.CardActions,
-										null,
-										_react2.default.createElement(_RaisedButton2.default, {
-											secondary: true,
-											label: 'View'
-										})
-									)
-								)
-							);
-						})
-					)
-				);
-			}
-		}, {
-			key: '_getProjects',
-			value: function _getProjects() {
-				var _projectsList = [];
-				var _this = this;
-				_axios2.default.get('./data/projects.json').then(function (response) {
-					console.log('projects fetched!');
-					_this.setState({
-						projectList: response.data.projects
-					});
-				}).catch(function (response) {
-					console.log(response);
-				});
-			}
-		}]);
-
-		return Projects;
-	}(_BasePage3.default);
-
-	module.exports = Projects;
-
-/***/ },
+/* 520 */,
 /* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -58961,7 +58360,695 @@
 
 
 /***/ },
-/* 539 */
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(75);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BasePage2 = __webpack_require__(487);
+
+	var _BasePage3 = _interopRequireDefault(_BasePage2);
+
+	var _Divider = __webpack_require__(488);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _Paper = __webpack_require__(439);
+
+	var _Paper2 = _interopRequireDefault(_Paper);
+
+	var _Card = __webpack_require__(491);
+
+	var _GridList = __webpack_require__(503);
+
+	var _IconButton = __webpack_require__(402);
+
+	var _IconButton2 = _interopRequireDefault(_IconButton);
+
+	var _Subheader = __webpack_require__(458);
+
+	var _Subheader2 = _interopRequireDefault(_Subheader);
+
+	var _starBorder = __webpack_require__(506);
+
+	var _starBorder2 = _interopRequireDefault(_starBorder);
+
+	var _FlatButton = __webpack_require__(507);
+
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Index = function (_BasePage) {
+		_inherits(Index, _BasePage);
+
+		function Index() {
+			_classCallCheck(this, Index);
+
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(Index).apply(this, arguments));
+		}
+
+		_createClass(Index, [{
+			key: 'render',
+			value: function render() {
+				var styles = {
+					gridList: {
+						width: 'auto',
+						height: 'auto',
+						overflowY: 'auto',
+						marginBottom: 24,
+						img: {
+							width: '33.3%'
+						}
+					}
+				};
+
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'span',
+						{ style: { fontSize: '24px', fontWeight: 'bold' } },
+						'Index'
+					),
+					_react2.default.createElement(_Divider2.default, null),
+					_react2.default.createElement(
+						_Paper2.default,
+						null,
+						_react2.default.createElement(
+							_Card.Card,
+							null,
+							_react2.default.createElement(_Card.CardHeader, {
+								title: 'URL Avatar',
+								subtitle: 'Subtitle',
+								avatar: './assets/img/starks.jpg'
+							}),
+							_react2.default.createElement(
+								_Card.CardText,
+								null,
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+							),
+							_react2.default.createElement(
+								_Card.CardText,
+								null,
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+							),
+							_react2.default.createElement(
+								_Card.CardText,
+								null,
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+							),
+							_react2.default.createElement(
+								_Card.CardText,
+								null,
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+							),
+							_react2.default.createElement(
+								_Card.CardText,
+								null,
+								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+							),
+							_react2.default.createElement(_Card.CardTitle, { title: 'Card title', subtitle: 'Card subtitle' }),
+							_react2.default.createElement(
+								_Card.CardActions,
+								null,
+								_react2.default.createElement(_FlatButton2.default, { label: 'Action1' }),
+								_react2.default.createElement(_FlatButton2.default, { label: 'Action2' })
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Index;
+	}(_BasePage3.default);
+
+	module.exports = Index;
+
+/***/ },
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(75);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BasePage2 = __webpack_require__(487);
+
+	var _BasePage3 = _interopRequireDefault(_BasePage2);
+
+	var _Divider = __webpack_require__(488);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _Card = __webpack_require__(491);
+
+	var _GridList = __webpack_require__(503);
+
+	var _IconButton = __webpack_require__(402);
+
+	var _IconButton2 = _interopRequireDefault(_IconButton);
+
+	var _Subheader = __webpack_require__(458);
+
+	var _Subheader2 = _interopRequireDefault(_Subheader);
+
+	var _starBorder = __webpack_require__(506);
+
+	var _starBorder2 = _interopRequireDefault(_starBorder);
+
+	var _FlatButton = __webpack_require__(507);
+
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var About = function (_BasePage) {
+		_inherits(About, _BasePage);
+
+		function About() {
+			_classCallCheck(this, About);
+
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(About).apply(this, arguments));
+		}
+
+		_createClass(About, [{
+			key: 'render',
+			value: function render() {
+				var styles = {
+					gridList: {
+						width: 'auto',
+						height: 'auto',
+						overflowY: 'auto',
+						marginBottom: 24,
+						img: {
+							width: '33.3%'
+						}
+					}
+				};
+
+				var tilesData = [{
+					img: './assets/img/starks.jpg',
+					title: 'Breakfast',
+					author: 'jill111'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Tasty burger',
+					author: 'pashminu'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Camera',
+					author: 'Danson67'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Morning',
+					author: 'fancycrave1'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Hats',
+					author: 'Hans'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Honey',
+					author: 'fancycravel'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Vegetables',
+					author: 'jill111'
+				}, {
+					img: './assets/img/starks.jpg',
+					title: 'Water plant',
+					author: 'BkrmadtyaKarki'
+				}];
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'span',
+						{ style: { fontSize: '24px', fontWeight: 'bold' } },
+						'About'
+					),
+					_react2.default.createElement(_Divider2.default, null),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						_Card.Card,
+						null,
+						_react2.default.createElement(_Card.CardHeader, {
+							title: 'URL Avatar',
+							subtitle: 'Subtitle',
+							avatar: './assets/img/starks.jpg'
+						}),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+						),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.'
+						),
+						_react2.default.createElement(
+							_GridList.GridList,
+							{
+								cellHeight: 200,
+								style: styles.gridList
+							},
+							_react2.default.createElement(
+								_Subheader2.default,
+								null,
+								'December'
+							),
+							tilesData.map(function (tile) {
+								return _react2.default.createElement(
+									_GridList.GridTile,
+									{
+										key: tile.title,
+										title: tile.title,
+										subtitle: _react2.default.createElement(
+											'span',
+											null,
+											'by ',
+											_react2.default.createElement(
+												'b',
+												null,
+												tile.author
+											)
+										),
+										actionIcon: _react2.default.createElement(
+											_IconButton2.default,
+											null,
+											_react2.default.createElement(_starBorder2.default, { color: 'white' })
+										)
+									},
+									_react2.default.createElement('img', { src: tile.img })
+								);
+							})
+						),
+						_react2.default.createElement(_Card.CardTitle, { title: 'Card title', subtitle: 'Card subtitle' }),
+						_react2.default.createElement(
+							_Card.CardActions,
+							null,
+							_react2.default.createElement(_FlatButton2.default, { label: 'Action1' }),
+							_react2.default.createElement(_FlatButton2.default, { label: 'Action2' })
+						)
+					)
+				);
+			}
+		}]);
+
+		return About;
+	}(_BasePage3.default);
+
+	module.exports = About;
+
+/***/ },
+/* 544 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(75);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BasePage2 = __webpack_require__(487);
+
+	var _BasePage3 = _interopRequireDefault(_BasePage2);
+
+	var _Divider = __webpack_require__(488);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _Paper = __webpack_require__(439);
+
+	var _Paper2 = _interopRequireDefault(_Paper);
+
+	var _TextField = __webpack_require__(511);
+
+	var _TextField2 = _interopRequireDefault(_TextField);
+
+	var _RaisedButton = __webpack_require__(517);
+
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+
+	var _Subheader = __webpack_require__(458);
+
+	var _Subheader2 = _interopRequireDefault(_Subheader);
+
+	var _send = __webpack_require__(519);
+
+	var _send2 = _interopRequireDefault(_send);
+
+	var _colors = __webpack_require__(313);
+
+	var _Card = __webpack_require__(491);
+
+	var _FlatButton = __webpack_require__(507);
+
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Contact = function (_BasePage) {
+		_inherits(Contact, _BasePage);
+
+		function Contact() {
+			_classCallCheck(this, Contact);
+
+			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Contact).call(this));
+
+			_this2.state = {
+				mobile: window.innerWidth > 767 ? '50%' : '100%'
+			};
+			return _this2;
+		}
+
+		_createClass(Contact, [{
+			key: 'render',
+			value: function render() {
+				var _this = this;
+				var styles = {
+					card: {
+						textAlign: 'center',
+						marginBottom: '15px',
+						cardHeader: {
+							textAlign: 'left'
+						}
+					},
+					clearFix: {
+						clear: 'both',
+						width: '100%',
+						display: 'block',
+						padding: '15px',
+						boxSizing: 'border-box'
+					},
+					twinContainer: {
+						padding: '15px',
+						width: _this.state.mobile,
+						display: 'inline-block',
+						boxSizing: 'border-box'
+					}
+				};
+
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'span',
+						{ style: { fontSize: '24px', fontWeight: 'bold' } },
+						'Contact'
+					),
+					_react2.default.createElement(_Divider2.default, null),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						_Card.Card,
+						{ style: styles.card },
+						_react2.default.createElement(
+							_Subheader2.default,
+							{ style: styles.card.cardHeader },
+							' Address Detail'
+						),
+						_react2.default.createElement(_Card.CardTitle, {
+							title: 'Address',
+							subtitle: 'Subtitle'
+						}),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+						),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+						),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+						),
+						_react2.default.createElement(
+							_Card.CardText,
+							null,
+							'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+						)
+					),
+					_react2.default.createElement(
+						_Paper2.default,
+						null,
+						_react2.default.createElement(
+							_Subheader2.default,
+							null,
+							' Contact Form'
+						),
+						_react2.default.createElement(
+							'div',
+							{ style: styles.clearFix },
+							_react2.default.createElement(
+								'div',
+								{ style: styles.twinContainer },
+								_react2.default.createElement(_TextField2.default, {
+									fullWidth: true,
+									hintText: 'Full Name',
+									errorText: '',
+									floatingLabelText: 'Full Name'
+								}),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement(_TextField2.default, {
+									fullWidth: true,
+									hintText: 'Phone',
+									errorText: '',
+									floatingLabelText: 'Phone'
+								}),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement(_TextField2.default, {
+									fullWidth: true,
+									hintText: 'Email',
+									errorText: '',
+									floatingLabelText: 'Email'
+								}),
+								_react2.default.createElement('br', null)
+							),
+							_react2.default.createElement(
+								'div',
+								{ style: styles.twinContainer },
+								_react2.default.createElement(_TextField2.default, {
+									fullWidth: true,
+									hintText: 'Message',
+									errorText: '',
+									floatingLabelText: 'Message',
+									multiLine: true,
+									rows: 5
+								}),
+								_react2.default.createElement('br', null),
+								_react2.default.createElement(_RaisedButton2.default, {
+									label: 'send',
+									fullWidth: true,
+									labelPosition: 'after',
+									primary: true,
+									backgroundColor: '#a4c639',
+									icon: _react2.default.createElement(_send2.default, { color: _colors.fullWhite })
+								})
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Contact;
+	}(_BasePage3.default);
+
+	module.exports = Contact;
+
+/***/ },
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(75);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BasePage2 = __webpack_require__(487);
+
+	var _BasePage3 = _interopRequireDefault(_BasePage2);
+
+	var _Card = __webpack_require__(491);
+
+	var _FlatButton = __webpack_require__(507);
+
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+
+	var _axios = __webpack_require__(521);
+
+	var _axios2 = _interopRequireDefault(_axios);
+
+	var _RaisedButton = __webpack_require__(517);
+
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+
+	var _Divider = __webpack_require__(488);
+
+	var _Divider2 = _interopRequireDefault(_Divider);
+
+	var _List = __webpack_require__(467);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Projects = function (_BasePage) {
+		_inherits(Projects, _BasePage);
+
+		function Projects() {
+			_classCallCheck(this, Projects);
+
+			var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).call(this));
+
+			_this2.state = {
+				projectList: []
+			};
+			return _this2;
+		}
+
+		_createClass(Projects, [{
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				this._getProjects();
+			}
+		}, {
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				var _this3 = this;
+
+				this._timer = setInterval(function () {
+					return _this3._getProjects();
+				}, 500000);
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				clearInterval(this._timer);
+				console.log('projects unmounted!');
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'span',
+						{ style: { fontSize: '24px', fontWeight: 'bold' } },
+						'Projects'
+					),
+					_react2.default.createElement(_Divider2.default, null),
+					_react2.default.createElement(
+						_List.List,
+						null,
+						this.state.projectList.map(function (item) {
+							return _react2.default.createElement(
+								_List.ListItem,
+								{
+									innerDivStyle: { padding: 0 },
+									style: { cursor: 'auto', margin: '0 0 15px 0' }, key: item.id },
+								_react2.default.createElement(
+									_Card.Card,
+									{ style: { padding: 0 } },
+									_react2.default.createElement(_Card.CardTitle, { title: item.title, subtitle: item.type }),
+									_react2.default.createElement(
+										_Card.CardText,
+										null,
+										item.techs.map(function (tech) {
+											return _react2.default.createElement(_FlatButton2.default, {
+												key: tech,
+												label: tech,
+												style: { margin: 5 }
+
+											});
+										})
+									),
+									_react2.default.createElement(
+										_Card.CardActions,
+										null,
+										_react2.default.createElement(_RaisedButton2.default, {
+											secondary: true,
+											label: 'View'
+										})
+									)
+								)
+							);
+						})
+					)
+				);
+			}
+		}, {
+			key: '_getProjects',
+			value: function _getProjects() {
+				var _projectsList = [];
+				var _this = this;
+				_axios2.default.get('./data/projects.json').then(function (response) {
+					console.log('projects fetched!');
+					_this.setState({
+						projectList: response.data.projects
+					});
+				}).catch(function (response) {
+					console.log(response);
+				});
+			}
+		}]);
+
+		return Projects;
+	}(_BasePage3.default);
+
+	module.exports = Projects;
+
+/***/ },
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59024,7 +59111,7 @@
 	module.exports = Nested;
 
 /***/ },
-/* 540 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
