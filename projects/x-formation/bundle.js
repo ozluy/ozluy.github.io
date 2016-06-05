@@ -27785,7 +27785,8 @@
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this._getDataFromGithubAPI();
-	      this._getDataFromXFormation();
+	      //  this._getDataFromXFormation(); // I had to Allow-Control-Allow Origin to Chorome to run this
+	      this._getDataFromLocal();
 	    }
 	  }, {
 	    key: 'render',
@@ -27897,6 +27898,21 @@
 	    value: function _getDataFromXFormation() {
 	      var _this = this;
 	      _axios2.default.get('https://www.x-formation.com/wp-content/uploads/2014/09/contributors.json', {
+	        dataType: 'json'
+	      }).then(function (response) {
+	        console.log(response);
+	        _this.setState({
+	          contributors: response.data
+	        });
+	      }).catch(function (response) {
+	        console.log(response);
+	      });
+	    }
+	  }, {
+	    key: '_getDataFromLocal',
+	    value: function _getDataFromLocal() {
+	      var _this = this;
+	      _axios2.default.get('./data/contributors.json', {
 	        dataType: 'json'
 	      }).then(function (response) {
 	        console.log(response);
