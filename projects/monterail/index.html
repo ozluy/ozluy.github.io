@@ -1,0 +1,438 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>Monterail</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style type="text/css">.avatar-root {
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.avatar-root img {
+  width: 100%;
+  height: 100%;
+}
+</style><style type="text/css">.question-root {
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(27, 27, 27, 0.2);
+  box-shadow: 2px 2px 4px 2px rgba(27, 27, 27, 0.2);
+  background-color: #fff;
+  height: 350px;
+}
+
+.question-root .questioner-shell {
+  height: 100px;
+  width: 75%;
+  float: left;
+  padding: 15px 0;
+  background-color: #DFF3FD;
+}
+
+.question-root .questioner-shell .main-avatar {
+  clear: both;
+  content: ' ';
+  display: table;
+  padding-left: 15px;
+}
+
+.question-root .questioner-shell .main-avatar div {
+  float: left;
+}
+
+.question-root .questioner-shell .main-avatar .question {
+  color: #0266B9;
+}
+
+.question-root .questioner-shell .main-avatar .question .owner {
+  color: #2d2c2e;
+  padding: 0 15px;
+}
+
+.question-root .questioner-shell .col-part {
+  -webkit-box-shadow: 0 2px 4px 1px rgba(27, 27, 27, 0.2);
+  box-shadow: 0 2px 4px 1px rgba(27, 27, 27, 0.2);
+  margin-top: 15px;
+  float: left;
+  width: 20%;
+  height: 200px;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.question-root .questioner-shell .col-part .label {
+  text-transform: uppercase;
+  position: absolute;
+  border-top: solid 1px #a7a9ac;
+  margin: 0 auto;
+  bottom: 0;
+  width: 70px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.question-root .questioner-shell .col-part:first-child {
+  background-color: #DFF3FD;
+}
+
+.question-root .questioner-shell .col-part.counter .label {
+  border: none;
+}
+
+.question-root .questioner-shell .col-part.col-part2 {
+  background: #e7e7e7;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  -webkit-background-size: 5px 5px;
+  background-size: 5px 5px;
+}
+
+.question-root .data {
+  padding-top: 100px;
+  height: 100px;
+  width: 25%;
+  padding-left: 5%;
+  float: left;
+  background-color: #fff;
+}
+
+.question-root .data .data-item {
+  font-style: italic;
+  padding: 15px 0;
+}
+
+.question-root .data .data-item .data-val {
+  font-style: normal;
+  font-weight: 700;
+}
+</style><style type="text/css">.questions-navbar {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+  padding: 40px 0 20px 0;
+  background-color: #fff;
+}
+
+.questions-navbar .title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-right .input-shell {
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+.navbar-right .input-shell:last-child {
+  font-style: italic;
+}
+
+.navbar-right .input-shell:last-child .sort {
+  font-style: normal;
+  color: #0266B9;
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-right .input-shell:last-child .sort.active {
+  color: #a7a9ac;
+  text-decoration: underline;
+}
+
+.search-box {
+  padding: 20px 0;
+}
+
+.search-box .search-input {
+  background-color: #e7e7e7;
+  height: 30px;
+  width: 75%;
+  float: left;
+}
+
+.search-box .search-input input {
+  width: 100%;
+  background-color: #e7e7e7;
+  height: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  padding-left: 15px;
+}
+
+.search-box .search-button {
+  margin-left: 5%;
+  width: 20%;
+  color: #a7a9ac;
+  text-transform: uppercase;
+  background-color: #fff;
+  height: 30px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+</style><style type="text/css">.sticker {
+  -webkit-box-shadow: 0 1px 1px 1px rgba(27, 27, 27, 0.2);
+  box-shadow: 0 1px 1px 1px rgba(27, 27, 27, 0.2);
+  text-align: center;
+  background-color: #e5f5fd;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.sticker .number {
+  margin: 0;
+  padding-top: 20px;
+}
+</style><style type="text/css">.joiner {
+  display: inline-block;
+  padding-top: 15px;
+  -webkit-box-shadow: 0 1px 1px 1px rgba(27, 27, 27, 0.2);
+  box-shadow: 0 1px 1px 1px rgba(27, 27, 27, 0.2);
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background: #e7e7e7;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  -webkit-background-size: 5px 5px;
+  background-size: 5px 5px;
+}
+
+.joiner .title {
+  height: 60px;
+  color: #0266B9;
+}
+</style><style type="text/css">.profile-row {
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+.profile-main-avatar {
+  text-align: center;
+}
+
+.profile-main-avatar .fullname {
+  color: #0266B9;
+}
+
+.profile-info {
+  width: 100%;
+  border: solid 2px #a7a9ac;
+  border-width: 0 0 2px 0;
+  padding-bottom: 50px;
+}
+
+.profile-info .info-col {
+  width: 33.3%;
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-info .info-col .star {
+  display: inline-block;
+  background-color: #FA8B81;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  font-style: normal;
+  text-align: center;
+  height: 25px;
+  margin: 0 5px;
+  line-height: 25px;
+}
+
+.profile-info .info-col .star.disabled {
+  opacity: .5;
+}
+
+.profile-tabber {
+  position: relative;
+}
+
+.profile-tabber .tab-control {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.profile-tabber .tab-control .control {
+  position: absolute;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #0266B9;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 20%;
+  font-size: 24px;
+}
+
+.profile-tabber .tab-control .control:hover {
+  background-color: #a7a9ac;
+}
+
+.profile-tabber .tab-control .control-left {
+  float: left;
+  left: 0;
+}
+
+.profile-tabber .tab-control .control-right {
+  right: 0;
+}
+
+.profile-tabber .item .title {
+  margin: 0;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.stickers {
+  text-align: center;
+}
+
+.stickers .subtitle {
+  margin: 40px 0;
+}
+
+.joiners {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.joiners .subtitle {
+  margin: 20px 0;
+}
+
+.profile-footer {
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-footer .subtitle {
+  margin: 0 0 40px 0;
+}
+
+.profile-footer .founder-avatar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+}
+
+.profile-footer .profile-footer-body {
+  padding-top: 50px;
+  height: 200px;
+  background: #e7e7e7;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  -webkit-background-size: 5px 5px;
+  background-size: 5px 5px;
+}
+
+.profile-footer .profile-footer-body .founder-name {
+  color: #0266B9;
+}
+
+.profile-footer .profile-footer-body .founder-name small {
+  padding-left: 15px;
+  color: #a7a9ac;
+}
+
+.profile-footer .profile-footer-body .vegan {
+  color: #0266B9;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.profile-footer .profile-footer-body .datas {
+  padding: 40px 0;
+}
+
+.profile-footer .profile-footer-body .datas .data-item {
+  width: 25%;
+  float: left;
+  font-weight: bold;
+}
+
+.profile-footer .profile-footer-body .datas .data-item small {
+  font-weight: normal;
+  font-style: italic;
+}
+</style><style type="text/css">body {
+  font-size: 300;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #FBFBFB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.row {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: #a7a9ac;
+}
+
+.subtitle small {
+  color: #2d2c2e;
+}
+
+.inner-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.root-link {
+  color: #0266B9;
+  text-align: center;
+}
+</style></head>
+<body cz-shortcut-listen="true">
+  <div id="app"><div data-reactroot="" class="container"><h2 class="root-link"><a href="#/"><!-- react-text: 4 -->Index<!-- /react-text --><small>(Comments)</small></a></h2><div class="container"><div class="questions-navbar"><div class="inner-container"><span class="title">Questions</span><div class="navbar-right"><span class="input-shell"><input type="radio" value="myShelf" name="fruit"><!-- react-text: 13 -->My shelf<!-- /react-text --><input type="radio" value="all" name="fruit"><!-- react-text: 15 -->All questions<!-- /react-text --></span><span class="input-shell"><!-- react-text: 17 --> Sort By: <!-- /react-text --><span class="sort">Recent</span><!-- react-text: 19 --> or <!-- /react-text --><span class="sort">Upvotes</span></span></div><div class="search-box"><div class="search-input"><input type="search" placeholder="you dont need button"></div><input type="button" class="search-button" value="Search"></div></div></div><div class="inner-container questions"><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=jon"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/jon.png"></div></a><div class="question"><div class="owner"><!-- react-text: 36 -->Jon Snow<!-- /react-text --><!-- react-text: 37 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=1">Is winter really coming?</a></div></div><div><div class="col-part"><!-- react-text: 41 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 45 -->3<!-- /react-text --><!-- react-text: 46 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=rob"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/rob.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=ned"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/ned.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=tyron"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/tyron.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">1</span><!-- react-text: 66 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">3</span><!-- react-text: 69 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">3</span><!-- react-text: 72 --> conversations<!-- /react-text --></div></div></div><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=daenerys"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/daenerys.png"></div></a><div class="question"><div class="owner"><!-- react-text: 81 -->Daenerys Targaryen<!-- /react-text --><!-- react-text: 82 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=2">Where are my dragons?</a></div></div><div><div class="col-part"><!-- react-text: 86 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 90 -->2<!-- /react-text --><!-- react-text: 91 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=ned"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/ned.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=tyron"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/tyron.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">3</span><!-- react-text: 106 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">2</span><!-- react-text: 109 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">5</span><!-- react-text: 112 --> conversations<!-- /react-text --></div></div></div><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=rob"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/rob.png"></div></a><div class="question"><div class="owner"><!-- react-text: 121 -->Rob Stark<!-- /react-text --><!-- react-text: 122 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=3">I’ve once asked father; how can a man be brave if he is afraid ?</a></div></div><div><div class="col-part"><!-- react-text: 126 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 130 -->2<!-- /react-text --><!-- react-text: 131 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=jon"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/jon.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=ned"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/ned.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=daenerys"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/daenerys.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">0</span><!-- react-text: 151 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">1</span><!-- react-text: 154 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">4</span><!-- react-text: 157 --> conversations<!-- /react-text --></div></div></div><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=ned"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/ned.png"></div></a><div class="question"><div class="owner"><!-- react-text: 166 -->Ned Stark<!-- /react-text --><!-- react-text: 167 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=4">A man passes a sentence should swing the sword?</a></div></div><div><div class="col-part"><!-- react-text: 171 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 175 -->1<!-- /react-text --><!-- react-text: 176 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=daenerys"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/daenerys.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=jaime"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/jaime.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">5</span><!-- react-text: 191 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">2</span><!-- react-text: 194 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">0</span><!-- react-text: 197 --> conversations<!-- /react-text --></div></div></div><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=jaime"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/jaime.png"></div></a><div class="question"><div class="owner"><!-- react-text: 206 -->Jaime Lannister<!-- /react-text --><!-- react-text: 207 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=5">Why the Gods made me love such a horrible woman?</a></div></div><div><div class="col-part"><!-- react-text: 211 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 215 -->6<!-- /react-text --><!-- react-text: 216 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=tyron"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/tyron.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=daenerys"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/daenerys.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">3</span><!-- react-text: 231 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">7</span><!-- react-text: 234 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">5</span><!-- react-text: 237 --> conversations<!-- /react-text --></div></div></div><div class="question-root"><div class="questioner-shell"><div class="main-avatar"><a href="#/profileDetail?username=tyron"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/tyron.png"></div></a><div class="question"><div class="owner"><!-- react-text: 246 -->Tyron Lannister<!-- /react-text --><!-- react-text: 247 -->: <!-- /react-text --></div><a href="#/commentDetail/?commentID=6">Do I drink and I know things?</a></div></div><div><div class="col-part"><!-- react-text: 251 --> <!-- /react-text --><div class="label">asked</div></div><div class="col-part counter"><div class="label"><!-- react-text: 255 -->23<!-- /react-text --><!-- react-text: 256 --> more activities<!-- /react-text --></div></div><div class="commenters"><div class="col-part col-part2"><a href="#/profileDetail?username=jaime"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/jaime.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=ned"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/ned.png"></div></a><div class="label">commented</div></div><div class="col-part col-part2"><a href="#/profileDetail?username=rob"><div class="avatar-root" style="width: 70px; height: 70px;"><img src="./images/rob.png"></div></a><div class="label">commented</div></div></div></div></div><div class="data"><div class="data-item"><span class="data-val">2</span><!-- react-text: 276 --> related disccussions<!-- /react-text --></div><div class="data-item"><span class="data-val">0</span><!-- react-text: 279 --> peers involved<!-- /react-text --></div><div class="data-item"><span class="data-val">1</span><!-- react-text: 282 --> conversations<!-- /react-text --></div></div></div></div></div></div></div>
+
+  <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+  <script type="text/javascript" src="/assets/app.js"></script>
+
+
+</body></html>

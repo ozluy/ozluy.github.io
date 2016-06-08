@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "username":"jon",
+    "avatar" : "jon.png",
+    "fullname": "Jon Snow",
+    "register_date":"2012-04-23T18:25:43.511Z",
+    "profile_motto": "Winter is coming...",
+    "peer_count": 50,
+    "discussion_count": 70,
+    "finding_count":23,
+    "question_count": 100,
+    "joined_members":[
+      {
+        "username": "jaime",
+        "fullname": "Jaime Lannister",
+        "avatar": "jaime.png"
+      },
+      {
+        "username": "rob",
+        "fullname": "Rob Stark",
+        "avatar": "rob.png"
+      },
+      {
+        "username": "ned",
+        "fullname": "Ned Stark",
+        "avatar": "ned.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "username":"rob",
+    "avatar" : "rob.png",
+    "fullname": "Rob Stark",
+    "register_date":"2011-05-23T18:25:43.511Z",
+    "profile_motto": "Death is coming...",
+    "peer_count": 42,
+    "discussion_count": 25,
+    "finding_count":33,
+    "question_count": 20,
+    "joined_members":[
+      {
+        "username": "jaime",
+        "fullname": "Jaime Lannister",
+        "avatar": "jaime.png"
+      },
+      {
+        "username": "jon",
+        "fullname": "Jon Snow",
+        "avatar": "jon.png"
+      },
+      {
+        "username": "ned",
+        "fullname": "Ned Stark",
+        "avatar": "ned.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "username":"ned",
+    "avatar" : "ned.png",
+    "fullname": "Ned Stark",
+    "register_date":"2013-01-23T18:25:43.511Z",
+    "profile_motto": "You are the best...",
+    "peer_count": 37,
+    "discussion_count": 62,
+    "finding_count":11,
+    "question_count": 33,
+    "joined_members":[
+      {
+        "username": "jaime",
+        "fullname": "Jaime Lannister",
+        "avatar": "jaime.png"
+      },
+      {
+        "username": "rob",
+        "fullname": "Rob Stark",
+        "avatar": "rob.png"
+      },
+      {
+        "username": "jon",
+        "fullname": "Jon Snow",
+        "avatar": "jon.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "username":"jaime",
+    "avatar" : "jaime.png",
+    "fullname": "Jaime Lannister",
+    "register_date":"2012-10-23T18:25:43.511Z",
+    "profile_motto": "King Slayer...",
+    "peer_count": 26,
+    "discussion_count": 93,
+    "finding_count":32,
+    "question_count": 10,
+    "joined_members":[
+      {
+        "username": "jon",
+        "fullname": "Jon Snow",
+        "avatar": "jon.png"
+      },
+      {
+        "username": "rob",
+        "fullname": "Rob Stark",
+        "avatar": "rob.png"
+      },
+      {
+        "username": "ned",
+        "fullname": "Ned Stark",
+        "avatar": "ned.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "username":"daenerys",
+    "avatar" : "daenerys.png",
+    "fullname": "Daenerys Targaryen",
+    "register_date":"2016-05-23T18:25:43.511Z",
+    "profile_motto": "Winter is coming...",
+    "peer_count": 50,
+    "discussion_count": 70,
+    "finding_count":23,
+    "question_count": 100,
+    "joined_members":[
+      {
+        "username": "tyron",
+        "fullname": "Tyron Lannister",
+        "avatar": "tyron.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "username":"tyron",
+    "avatar" : "tyron.png",
+    "fullname": "Tyron Lannister",
+    "register_date":"2016-04-23T18:25:43.511Z",
+    "profile_motto": "Where is my drink...",
+    "peer_count": 25,
+    "discussion_count": 73,
+    "finding_count":19,
+    "question_count": 27,
+    "joined_members":[
+      {
+        "username": "daenerys",
+        "fullname": "Daenerys Targaryen",
+        "avatar": "daenerys.png"
+      }
+    ]
+  }
+]
