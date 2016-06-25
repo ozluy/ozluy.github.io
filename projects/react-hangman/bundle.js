@@ -7754,7 +7754,7 @@
 	      wordFromAPI: [],
 	      resultBox: {
 	        disabled: '',
-	        title: 'Hangman',
+	        title: 'press any key to play game.',
 	        buttonLabel: 'Start Game'
 	      },
 	      failedLetters: [],
