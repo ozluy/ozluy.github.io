@@ -7754,7 +7754,7 @@
 	      wordFromAPI: [],
 	      resultBox: {
 	        disabled: '',
-	        title: 'press any key to play game.',
+	        title: 'press any key to play game',
 	        buttonLabel: 'Start Game'
 	      },
 	      failedLetters: [],
@@ -8038,7 +8038,7 @@
 	        rightFootVisibility: 'hidden', //Human
 	        resultBox: {
 	          disabled: 'disabled',
-	          title: 'Hangman',
+	          title: 'press any key to play game',
 	          buttonLabel: 'Start Game'
 	        },
 	        failedLetters: [],
