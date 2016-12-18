@@ -34176,8 +34176,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./Layout.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./Layout.scss");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./Layout.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./Layout.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -34195,7 +34195,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  font-family: Arial; }\n\n* {\n  box-sizing: border-box; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n.UpworkExam-menu {\n  width: 20%;\n  margin: 0;\n  padding: 0;\n  float: left;\n  list-style: none; }\n  .UpworkExam-menu-item a {\n    display: block;\n    padding: 5px 5px 5px 20px;\n    border: solid 1px #c0c0c0;\n    border-width: 1px 1px 0 1px;\n    font-size: 12px;\n    transition: all .4s ease; }\n  .UpworkExam-menu-item:last-child a {\n    border-width: 1px 1px 1px 1px; }\n  .UpworkExam-menu-item:hover a {\n    cursor: pointer; }\n  .UpworkExam-menu-item.\\--active a {\n    background-color: #E7EBFF;\n    border-color: #2a9fcd;\n    font-weight: bold; }\n\n.UpworkExam-content {\n  width: calc(80% - 15px);\n  float: left;\n  margin-left: 15px; }\n  .UpworkExam-content-title {\n    margin: 0;\n    font-size: 16px;\n    border-bottom: solid 1px #000;\n    padding-bottom: 4px;\n    font-weight: normal;\n    margin-bottom: 15px; }\n", ""]);
+	exports.push([module.id, "body {\n  font-family: Arial; }\n\n* {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n.UpworkExam-menu {\n  width: 20%;\n  margin: 0;\n  padding: 0;\n  float: left;\n  list-style: none; }\n  .UpworkExam-menu-item a {\n    display: block;\n    padding: 5px 5px 5px 20px;\n    border: solid 1px #c0c0c0;\n    border-width: 1px 1px 0 1px;\n    font-size: 12px;\n    -webkit-transition: all .4s ease;\n    -o-transition: all .4s ease;\n    -moz-transition: all .4s ease;\n    transition: all .4s ease; }\n  .UpworkExam-menu-item:last-child a {\n    border-width: 1px 1px 1px 1px; }\n  .UpworkExam-menu-item:hover a {\n    cursor: pointer; }\n  .UpworkExam-menu-item.\\--active a {\n    background-color: #E7EBFF;\n    border-color: #2a9fcd;\n    font-weight: bold; }\n\n.UpworkExam-content {\n  width: -webkit-calc(80% - 15px);\n  width: -moz-calc(80% - 15px);\n  width: calc(80% - 15px);\n  float: left;\n  margin-left: 15px; }\n  .UpworkExam-content-title {\n    margin: 0;\n    font-size: 16px;\n    border-bottom: solid 1px #000;\n    padding-bottom: 4px;\n    font-weight: normal;\n    margin-bottom: 15px; }\n", ""]);
 
 	// exports
 
@@ -49947,8 +49947,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./DataAnaysis.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./DataAnaysis.scss");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./DataAnaysis.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./DataAnaysis.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -50092,7 +50092,6 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'TodayWeather' },
-	                    _s.loading && _react2.default.createElement('img', { src: __webpack_require__(385), alt: 'Ajax Loader' }),
 	                    _s.error && _react2.default.createElement(
 	                        'div',
 	                        { className: 'TodayWeather-error-message' },
@@ -50118,6 +50117,11 @@
 	                            'button',
 	                            { type: 'submit', className: 'TodayWeather-form-submit' },
 	                            'Search'
+	                        ),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'TodayWeather-ajax-loader' },
+	                            _s.loading && _react2.default.createElement('img', { src: __webpack_require__(385), alt: 'Ajax Loader' })
 	                        )
 	                    ),
 	                    _s.apiResult && _react2.default.createElement(
@@ -50190,8 +50194,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./TodayWeather.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./TodayWeather.scss");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./TodayWeather.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js!./TodayWeather.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -50209,7 +50213,7 @@
 
 
 	// module
-	exports.push([module.id, ".TodayWeather-error-message {\n  border: solid 1px #ccc;\n  padding: 5px; }\n\n.TodayWeather-form {\n  padding-top: 15px; }\n  .TodayWeather-form-input {\n    border: solid 2px #000;\n    margin-right: 15px;\n    padding: 2px 15px;\n    font-size: 14px;\n    width: 100px; }\n  .TodayWeather-form-submit {\n    padding: 3px 15px;\n    margin-left: 25px;\n    border-radius: 5px;\n    display: inline-block;\n    font-size: 14px;\n    background-color: #ccc;\n    cursor: pointer;\n    transition: all .4s ease;\n    color: #000;\n    border: solid 2px #000;\n    outline: none !important; }\n    .TodayWeather-form-submit:hover {\n      background-color: #737373;\n      color: #fff; }\n\n.TodayWeather-result {\n  margin-top: 15px;\n  float: left; }\n  .TodayWeather-result__weather-img {\n    background-color: #ddd;\n    height: 65px;\n    width: 60px;\n    margin: 20px;\n    background-image: url(" + __webpack_require__(384) + ");\n    background-position: -145px -515px;\n    float: left; }\n    .TodayWeather-result__weather-img.\\--cloud {\n      background-position: -72.5px -155px; }\n    .TodayWeather-result__weather-img.\\--rain {\n      background-position: -360.5px -155px; }\n    .TodayWeather-result__weather-img.\\--clear {\n      background-position: -215px -300px; }\n  .TodayWeather-result__weather-text {\n    float: left;\n    padding-left: 15px;\n    text-align: center;\n    padding-top: 25px; }\n    .TodayWeather-result__weather-text h1 {\n      margin: 0; }\n    .TodayWeather-result__weather-text small {\n      color: #777;\n      font-weight: bold; }\n  .TodayWeather-result__weather-detail label {\n    width: 100px;\n    display: inline-block; }\n  .TodayWeather-result__weather-detail:before {\n    clear: both;\n    display: table;\n    content: ' '; }\n", ""]);
+	exports.push([module.id, ".TodayWeather-error-message {\n  border: solid 1px #ccc;\n  padding: 5px; }\n\n.TodayWeather-form {\n  padding-top: 15px; }\n  .TodayWeather-form-input {\n    border: solid 2px #000;\n    margin-right: 15px;\n    padding: 5px 15px;\n    font-size: 14px;\n    width: 120px;\n    -webkit-border-radius: 5px;\n       -moz-border-radius: 5px;\n            border-radius: 5px; }\n  .TodayWeather-form-submit {\n    padding: 5px 15px;\n    margin-left: 25px;\n    -webkit-border-radius: 5px;\n       -moz-border-radius: 5px;\n            border-radius: 5px;\n    display: inline-block;\n    font-size: 14px;\n    background-color: #ccc;\n    cursor: pointer;\n    -webkit-transition: all .4s ease;\n    -o-transition: all .4s ease;\n    -moz-transition: all .4s ease;\n    transition: all .4s ease;\n    color: #000;\n    border: solid 2px #000;\n    outline: none !important; }\n    .TodayWeather-form-submit:hover {\n      background-color: #737373;\n      color: #fff; }\n\n.TodayWeather-result {\n  margin-top: 15px;\n  float: left; }\n  .TodayWeather-result__weather-img {\n    background-color: #ddd;\n    height: 65px;\n    width: 60px;\n    margin: 20px;\n    background-image: url(" + __webpack_require__(384) + ");\n    background-position: -145px -515px;\n    float: left; }\n    .TodayWeather-result__weather-img.\\--cloud {\n      background-position: -72.5px -155px; }\n    .TodayWeather-result__weather-img.\\--rain {\n      background-position: -360.5px -155px; }\n    .TodayWeather-result__weather-img.\\--clear {\n      background-position: -215px -300px; }\n  .TodayWeather-result__weather-text {\n    float: left;\n    padding-left: 15px;\n    text-align: center;\n    padding-top: 25px; }\n    .TodayWeather-result__weather-text h1 {\n      margin: 0; }\n    .TodayWeather-result__weather-text small {\n      color: #777;\n      font-weight: bold; }\n  .TodayWeather-result__weather-detail label {\n    width: 100px;\n    display: inline-block; }\n  .TodayWeather-result__weather-detail:before {\n    clear: both;\n    display: table;\n    content: ' '; }\n\n.TodayWeather-ajax-loader {\n  position: relative;\n  display: inline-block; }\n  .TodayWeather-ajax-loader img {\n    position: absolute;\n    width: 25px;\n    top: -20px;\n    left: 15px;\n    height: 25px; }\n", ""]);
 
 	// exports
 
