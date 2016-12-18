@@ -34603,22 +34603,19 @@
 	                    width: 700,
 	                    title: _s.chartTitle,
 	                    viewBoxObject: {
-	                        x: -10,
+	                        x: 0,
 	                        y: 0,
 	                        width: 700,
 	                        height: 400
-	                    },
-	                    yAxisLabelOffset: 43
-	                    //  domain={{ x: [, 2006], y: [70,] }}
-	                    //    domain={{x: 2006, y: 70}}
+	                    }
+	                    //  yAxisLabelOffset={35}
 	                    , yAxisLabel: 'People',
 	                    xAxisLabel: 'Years',
-	                    gridHorizontal: true
-	                    // yAxis={{ interval: 10 }}
-	                    , xAxisTickInterval: { interval: 10000 },
+	                    gridHorizontal: true,
+	                    xAxisTickInterval: { interval: 10000 },
 	                    yAxisTickInterval: { unit: 'year', interval: 10 },
 	                    yAxisFormatter: function yAxisFormatter(val) {
-	                        return val / 1000 + 'k';
+	                        return '    ' + val / 1000 + 'k';
 	                    }
 	                })
 	            );
@@ -49969,7 +49966,7 @@
 
 
 	// module
-	exports.push([module.id, ".rd3-chart-title {\n  text-align: center; }\n\ng .rd3-linechart-path:last-child {\n  stroke: #ff0000; }\n\ng g:nth-child(n+8) .rd3-linechart-circle {\n  fill: #ff0000 !important; }\n\n.rd3-legend-item:last-child {\n  color: #ff0000 !important; }\n", ""]);
+	exports.push([module.id, ".rd3-chart-title {\n  text-align: center; }\n\ng .rd3-linechart-path:last-child {\n  stroke: #ff0000; }\n\ng g:nth-child(n+8) .rd3-linechart-circle {\n  fill: #ff0000 !important; }\n\n.rd3-legend-item:last-child {\n  color: #ff0000 !important; }\n\n.rd3-legend-item span {\n  display: block;\n  font-size: 12px !important; }\n\n.rd3-linechart-yaxis text, .rd3-linechart-xaxis text {\n  font-size: 12px; }\n", ""]);
 
 	// exports
 
@@ -50038,7 +50035,8 @@
 	                if (err && err.status === 502) {
 	                    _this.setState({
 	                        error: res.body,
-	                        loading: false
+	                        loading: false,
+	                        apiResult: null
 	                    });
 	                    return;
 	                } else {
@@ -50122,7 +50120,7 @@
 	                            'Search'
 	                        )
 	                    ),
-	                    !_s.error && _react2.default.createElement(
+	                    _s.apiResult && _react2.default.createElement(
 	                        'div',
 	                        { className: 'TodayWeather-result' },
 	                        _react2.default.createElement('div', { className: 'TodayWeather-result__weather-img ' + _s.weatherImg }),
@@ -50220,13 +50218,13 @@
 /* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "3a42449822fc60e574778dcbc3cb63f4.png";
+	module.exports = __webpack_require__.p + "icons.png";
 
 /***/ },
 /* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "4e9173c96959c84411c28f478cba3c1c.gif";
+	module.exports = __webpack_require__.p + "ajax-loader.gif";
 
 /***/ }
 /******/ ]);
