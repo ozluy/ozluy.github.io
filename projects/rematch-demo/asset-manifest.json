@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projects/rematch-demo/static/css/main.3bb60307.chunk.css",
+    "main.js": "/projects/rematch-demo/static/js/main.a3f2b5cc.chunk.js",
+    "main.js.map": "/projects/rematch-demo/static/js/main.a3f2b5cc.chunk.js.map",
+    "runtime~main.js": "/projects/rematch-demo/static/js/runtime~main.e98c1cd1.js",
+    "runtime~main.js.map": "/projects/rematch-demo/static/js/runtime~main.e98c1cd1.js.map",
+    "static/js/2.febdd4ff.chunk.js": "/projects/rematch-demo/static/js/2.febdd4ff.chunk.js",
+    "static/js/2.febdd4ff.chunk.js.map": "/projects/rematch-demo/static/js/2.febdd4ff.chunk.js.map",
+    "index.html": "/projects/rematch-demo/index.html",
+    "precache-manifest.9434836afdac60761febc16d2a88019e.js": "/projects/rematch-demo/precache-manifest.9434836afdac60761febc16d2a88019e.js",
+    "service-worker.js": "/projects/rematch-demo/service-worker.js",
+    "static/css/main.3bb60307.chunk.css.map": "/projects/rematch-demo/static/css/main.3bb60307.chunk.css.map"
+  }
+}
