@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/projects/react-stripe-elements-loader/static/css/main.2cce8147.chunk.css",
-    "main.js": "/projects/react-stripe-elements-loader/static/js/main.4fbfeefb.chunk.js",
-    "main.js.map": "/projects/react-stripe-elements-loader/static/js/main.4fbfeefb.chunk.js.map",
-    "runtime~main.js": "/projects/react-stripe-elements-loader/static/js/runtime~main.011817c0.js",
-    "runtime~main.js.map": "/projects/react-stripe-elements-loader/static/js/runtime~main.011817c0.js.map",
-    "static/js/2.0807cebe.chunk.js": "/projects/react-stripe-elements-loader/static/js/2.0807cebe.chunk.js",
-    "static/js/2.0807cebe.chunk.js.map": "/projects/react-stripe-elements-loader/static/js/2.0807cebe.chunk.js.map",
-    "index.html": "/projects/react-stripe-elements-loader/index.html",
-    "precache-manifest.ffc2020929fe0a395b8f43b57430e89e.js": "/projects/react-stripe-elements-loader/precache-manifest.ffc2020929fe0a395b8f43b57430e89e.js",
-    "service-worker.js": "/projects/react-stripe-elements-loader/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/projects/react-stripe-elements-loader/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/projects/react-stripe-elements-loader/static/media/logo.5d5d9eef.svg"
+    "main.css": "/projects/react-stripe-script-loader/static/css/main.2cce8147.chunk.css",
+    "main.js": "/projects/react-stripe-script-loader/static/js/main.8487f494.chunk.js",
+    "main.js.map": "/projects/react-stripe-script-loader/static/js/main.8487f494.chunk.js.map",
+    "runtime~main.js": "/projects/react-stripe-script-loader/static/js/runtime~main.d20f5951.js",
+    "runtime~main.js.map": "/projects/react-stripe-script-loader/static/js/runtime~main.d20f5951.js.map",
+    "static/js/2.0807cebe.chunk.js": "/projects/react-stripe-script-loader/static/js/2.0807cebe.chunk.js",
+    "static/js/2.0807cebe.chunk.js.map": "/projects/react-stripe-script-loader/static/js/2.0807cebe.chunk.js.map",
+    "index.html": "/projects/react-stripe-script-loader/index.html",
+    "precache-manifest.d6819e6dbe96e00b5d35e2bfb3bd7cd8.js": "/projects/react-stripe-script-loader/precache-manifest.d6819e6dbe96e00b5d35e2bfb3bd7cd8.js",
+    "service-worker.js": "/projects/react-stripe-script-loader/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/projects/react-stripe-script-loader/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/projects/react-stripe-script-loader/static/media/logo.5d5d9eef.svg"
   }
 }
