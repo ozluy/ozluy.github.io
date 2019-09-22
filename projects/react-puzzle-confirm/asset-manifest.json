@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/projects/react-puzzle-confirm/static/css/main.23eac47f.chunk.css",
-    "main.js": "/projects/react-puzzle-confirm/static/js/main.fbbae7aa.chunk.js",
-    "main.js.map": "/projects/react-puzzle-confirm/static/js/main.fbbae7aa.chunk.js.map",
-    "runtime-main.js": "/projects/react-puzzle-confirm/static/js/runtime-main.540fb078.js",
-    "runtime-main.js.map": "/projects/react-puzzle-confirm/static/js/runtime-main.540fb078.js.map",
-    "static/js/2.d5f11cab.chunk.js": "/projects/react-puzzle-confirm/static/js/2.d5f11cab.chunk.js",
-    "static/js/2.d5f11cab.chunk.js.map": "/projects/react-puzzle-confirm/static/js/2.d5f11cab.chunk.js.map",
-    "index.html": "/projects/react-puzzle-confirm/index.html",
-    "precache-manifest.6adfc7da4fd7a66689cf7e9d1124d66d.js": "/projects/react-puzzle-confirm/precache-manifest.6adfc7da4fd7a66689cf7e9d1124d66d.js",
-    "service-worker.js": "/projects/react-puzzle-confirm/service-worker.js",
-    "static/css/main.23eac47f.chunk.css.map": "/projects/react-puzzle-confirm/static/css/main.23eac47f.chunk.css.map"
+    "main.css": "/ozluy/react-puzzle-confirm/static/css/main.7241e4f3.chunk.css",
+    "main.js": "/ozluy/react-puzzle-confirm/static/js/main.eeee6554.chunk.js",
+    "main.js.map": "/ozluy/react-puzzle-confirm/static/js/main.eeee6554.chunk.js.map",
+    "runtime-main.js": "/ozluy/react-puzzle-confirm/static/js/runtime-main.02037993.js",
+    "runtime-main.js.map": "/ozluy/react-puzzle-confirm/static/js/runtime-main.02037993.js.map",
+    "static/js/2.d5f11cab.chunk.js": "/ozluy/react-puzzle-confirm/static/js/2.d5f11cab.chunk.js",
+    "static/js/2.d5f11cab.chunk.js.map": "/ozluy/react-puzzle-confirm/static/js/2.d5f11cab.chunk.js.map",
+    "index.html": "/ozluy/react-puzzle-confirm/index.html",
+    "precache-manifest.81dc04459dccf94410ebccd6f6f94f4b.js": "/ozluy/react-puzzle-confirm/precache-manifest.81dc04459dccf94410ebccd6f6f94f4b.js",
+    "service-worker.js": "/ozluy/react-puzzle-confirm/service-worker.js",
+    "static/css/main.7241e4f3.chunk.css.map": "/ozluy/react-puzzle-confirm/static/css/main.7241e4f3.chunk.css.map"
   }
 }
